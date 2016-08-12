@@ -1,0 +1,242 @@
+html {
+    background-color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    width:100%;
+    height:100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #ffffff;
+    overflow-y:hidden;
+}
+
+intro{
+    color:#333;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+    height:100px;
+    width:200px;
+}
+
+intro a {
+ text-decoration:none;
+    color:#333;
+}
+
+h1
+{
+font-size:12px;
+}
+h2, h3, h4, h5, h6 {
+    font-size:10px;
+}
+
+
+prev_img{
+    margin: 0 5px; 
+}
+
+
+img
+{
+    
+    /*padding: 15px 10px 10px;*/
+    margin: 0;
+    max-width: 95%;
+}
+
+#switcher-1 {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    left:0;
+    height:100%;
+
+}
+
+#switcher-2 {
+    background-size:cover;
+    position:absolute;
+    top:0%;
+    left:100%;
+    width:100%;
+    /* Ensure the html element always takes up the full height of the browser window */
+    
+   /*  background:url('1.jpg') no-repeat center center;*/
+    height:100%;
+    /* 
+        
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -webkit-animation: fadein 2s; 
+    -o-animation: fadein 2s; 
+    
+    */
+
+}
+
+#switcher-3 {
+    background-size:cover;
+    position:absolute;
+    top:00%;
+    left:200%;
+    width:100%;
+    /* Ensure the html element always takes up the full height of the browser window */
+    
+   /*  background:url('1.jpg') no-repeat center center;*/
+    height:100%;
+    /* 
+        
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -webkit-animation: fadein 2s; 
+    -o-animation: fadein 2s; 
+    
+    */
+
+}
+
+
+#switcher-4 {
+    background-size:cover;
+    position:absolute;
+    top:00%;
+    left:300%;
+    width:100%;
+    /* Ensure the html element always takes up the full height of the browser window */
+    
+   /*  background:url('1.jpg') no-repeat center center;*/
+    height:100%;
+    /* 
+        
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -webkit-animation: fadein 2s; 
+    -o-animation: fadein 2s; 
+    
+    */
+
+}
+.caption-1{position:absolute;bottom:auto;left:auto;right:0;top:12%;width:auto;color:#333;background-color:#fff;padding:1em;z-index:-1; opacity:0}
+
+input#caption:checked~.caption-1, input#caption:checked~.caption-2, input#caption:checked~.caption-3, input#caption:checked~.caption-4{z-index:1;
+    opacity:1;
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;}
+.caption a{display:inline-block;color:#fff;background:#5485C9;padding:2px 4px} 
+.caption a:hover{background:#fff;color:#555}
+
+.caption-2{position:absolute;bottom:auto;left:auto;right:-100%;top:12%;width:auto;color:#333;background-color:#fff;padding:1em;z-index:-1; opacity:0}
+
+.caption-3{position:absolute;bottom:auto;left:auto;right:-200%;top:12%;width:auto;color:#333;background-color:#fff;padding:1em;z-index:-1; opacity:0}
+
+.caption-4{position:absolute;bottom:auto;left:auto;right:-300%;top:12%;width:auto;color:#333;background-color:#fff;padding:1em;z-index:-1; opacity:0}
+
+kground:#5485C9;padding:2px 4px} 
+.caption a:hover{background:#fff;color:#555}
+
+#switcher-wrapper {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.2);
+    text-align: center;
+    position:fixed;
+    bottom:0px;
+    height: 60px;
+    width:100%;
+    margin: 0 auto;
+    padding-top: 10px;
+     z-index: 100;
+    }
+input{display:none}
+
+label.caption-open{position:fixed;top:2em;right:0;background:#fff;height:1.5em;padding:0.5em 0 0.5em 0;color:#333;width:80px;white-space:nowrap}
+
+label.caption-open:hover, label.caption-open:focus{background:#eee;color:#333}
+
+input#caption:checked~label.caption-open{background:#fff;color:#333;width:80px;}
+
+label.caption-open:after{content:"DETAILS";font-weight:bold;display:inline-block;font-size:12px;}
+
+ input#caption:checked~label.caption-open:after{content:"CLOSE";display:inline-block;font-size:12px;}
+
+ input#caption:checked~label.caption-close:after{content:"Tes INFO";display:inline-block;font-size:12px;}
+
+.caption h3{font-size:1.4em;text-align:left;margin:0 0 0.5em 0}
+
+.caption p{margin:0; font-size:1em;text-align:left}
+
+
+label{cursor:pointer}
+
+label.menu-open{position:fixed;top:2em;left:30px;height:auto;padding:0.5em;color:#333;width:auto;white-space:nowrap;}
+
+
+
+input#menu:checked~label.menu-open{
+background: #fff;}
+
+label.menu-open div.menu-button{
+   text-align:left; 
+}
+input#menu:checked~label.menu-open div.menu-button{
+   display:none; 
+}
+
+label.menu-open div.menu-content{
+   text-align:left;
+    opacity:0;
+}
+
+input#menu:checked~label.menu-open div.menu-content{
+    opacity:1;
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;}
+.caption a{display:inline-block;color:#fff;background:#5485C9;padding:2px 4px} 
+.caption a:hover{background:#fff;color:#555}
+}
+
+
+
+@keyframes fadein {
+    from {
+        opacity:0.5;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0.5;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0.5;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
