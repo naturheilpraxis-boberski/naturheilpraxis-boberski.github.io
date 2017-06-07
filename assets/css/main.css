@@ -2473,7 +2473,7 @@
 		@media screen and (max-width: 1680px) {
 
 			.texticon.major {
-				font-size: 5.5rem;
+				font-size: 5.5em;
 			}
 
 		}
@@ -2481,7 +2481,7 @@
 		@media screen and (max-width: 1280px) {
 
 			.texticon.major {
-				font-size: 4.75rem;
+				font-size: 4.75em;
 			}
 
 		}
@@ -2489,13 +2489,10 @@
 		@media screen and (max-width: 736px) {
 
 			.texticon.major {
-				margin: 0 0 1.5em 0;
-				padding: 0.35em;
+				/* margin: 0 0 10.5em 0; */
+				/* padding: 0.35em; */
+				font-size: 3.75em;
 			}
-
-				.texticon.major:before {
-					font-size: 3.5rem;
-				}
 
 		}
 
