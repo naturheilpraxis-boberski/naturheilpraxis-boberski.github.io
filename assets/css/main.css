@@ -2472,7 +2472,7 @@
 
 		@media screen and (max-width: 1680px) {
 
-			.texticon.major:before {
+			.texticon.major {
 				font-size: 5.5rem;
 			}
 
@@ -2480,7 +2480,7 @@
 
 		@media screen and (max-width: 1280px) {
 
-			.texticon.major:before {
+			.texticon.major {
 				font-size: 4.75rem;
 			}
 
